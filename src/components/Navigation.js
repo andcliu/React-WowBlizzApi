@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
-import { Nav, NavItem, NavLink } from 'reactstrap';
+import { Nav, NavItem, NavLink} from 'reactstrap';
 
 export default class Navigation extends Component{
 
@@ -11,16 +11,16 @@ export default class Navigation extends Component{
 		    <div>
 		      <Nav>
 		        <NavItem>
-		          <NavLink><Link to="/">Profile</Link></NavLink>
+		          <NavLink tag={Link} to="/">Profile</NavLink>
 		        </NavItem>
 		        <NavItem>
-		          <NavLink><Link to="/Characters">Characters</Link></NavLink>
+		          <NavLink tag={Link} to="/Characters">Characters</NavLink>
 		        </NavItem>
 		        <NavItem>
-		          <NavLink><Link to="/Bosses">Bosses</Link></NavLink>
+		          <NavLink tag={Link} to="/Bosses">Bosses</NavLink>
 		        </NavItem>
 		        <NavItem>
-		          <NavLink><Link to="/Mounts">Mounts</Link></NavLink>
+		          <NavLink tag={Link} to="/Mounts">Mounts</NavLink>
 		        </NavItem>
 		      </Nav>
 		      <Route exact path="/" component={this.props.Profile} />

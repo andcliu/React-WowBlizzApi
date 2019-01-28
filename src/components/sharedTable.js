@@ -44,7 +44,7 @@ export default class SharedTable extends Component{
 		const data=this.convertArray(this.state.data);
 		const parsedData=data.map((k,i)=> {
 			return(
-				<tr>
+				<tr key={k+i}>
 					{this.props.tdValues.map((e)=> {
 						{if(e==='isFlying'){
 							return <td>Flying: {k[e] ? 'Yes' : 'No'}</td>
@@ -64,7 +64,9 @@ export default class SharedTable extends Component{
 		return(	
 			<Table>
 				<thead>
+					<tr>
 					{header}
+					</tr>
 				</thead>
 				<tbody>
 					{parsedData}
