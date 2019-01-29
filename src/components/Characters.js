@@ -1,5 +1,5 @@
 import React from 'react';
-import SharedTable from './sharedTable';
+import Body from './Body';
 
 const Characters=(props)=>{
 	const charImg=(i,s)=>{
@@ -8,7 +8,7 @@ const Characters=(props)=>{
 	var headerNames=['Name','Faction','Image']
 	var tdValues=['name','side','image']
 	return(
-		<SharedTable header={headerNames} tdValues={tdValues} charImg={charImg} type='races' />
+		<Body header={headerNames} tdValues={tdValues} charImg={charImg} type='races' />
 	)
 }
 

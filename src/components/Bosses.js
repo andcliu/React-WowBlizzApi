@@ -1,11 +1,11 @@
 import React from 'react';
-import SharedTable from './sharedTable';
+import Body from './Body';
 
 const Bosses = (props) =>{
 	var headerNames=['Name','Health','Level','Description']
 	var tdValues=['name','health','level','description']
 	return(
-		<SharedTable header={headerNames} tdValues={tdValues} type='bosses' />
+		<Body header={headerNames} tdValues={tdValues} type='bosses' />
 	)
 }
 

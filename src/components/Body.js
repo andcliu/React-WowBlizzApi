@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import {Table} from 'reactstrap';
 import axios from 'axios';
-export default class SharedTable extends Component{
+export default class Body extends Component{
 	constructor(props){
 		super(props);
 		this.convertArray=this.convertArray.bind(this);

@@ -1,11 +1,11 @@
 import React from 'react';
-import SharedTable from './sharedTable';
+import Body from './Body';
 
 const Mounts=(props)=>{
 	var headerNames=['Name','Icon','Type'];
 	var tdValues=['name','icon','isGround','isFlying'];
 	return(
-		<SharedTable header={headerNames} tdValues={tdValues} type='mounts' />
+		<Body header={headerNames} tdValues={tdValues} type='mounts' />
 	)
 }
 
